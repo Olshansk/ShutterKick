@@ -1,0 +1,19 @@
+<h1>Sign Up</h1>
+<%= form_for @user do |f| %>
+  <%= render :partial => "shared/errors", :locals => {:model => @user} %>
+
+  <div class="field">
+    <%= f.text_field :email %> <br/>
+    <%= f.label :email, "Email address" %>
+  </div>
+  <div class="field">
+    <%= f.password_field :password %> <br/>
+    <%= f.label :password, "Password" %>
+  </div>
+  <div class="field">
+    <%= f.password_field :password_confirmation %> <br/>
+    <%= f.label :password_confirm, "Confirm Password" %>
+  </div>
+
+  <%= f.submit "Sign up" %>
+<% end %>

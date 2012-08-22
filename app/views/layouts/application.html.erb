@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShutterKick</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="header">
+    <%= link_to "ShutterKick", root_path %>
+    This is a header.
+    <% if current_user %>
+      <%= link_to "My Projects", projects_path %>
+      <%= link_to "Log Out", user_sessions_path, :method => :delete %>
+    <% else %>
+      <%= link_to "Sign Up", new_user_path %>
+      <%= link_to "Log in", new_user_sessions_path %>
+    <% end %>
+  </div>
+  
+  <%= yield %>
+
+  <div class="footer">
+    We can put a footer here.
+  </div>
+  
+</body>
+</html>

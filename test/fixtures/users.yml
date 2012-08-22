@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  gender: MyString
+  birthday: 2012-08-18
+  notify_news: false
+  notify_offers: false
+  notify_message: false
+  notify_quote: false
+  notify_apppointment: false
+  notify_photos: false
+  notify_bill: false
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  gender: MyString
+  birthday: 2012-08-18
+  notify_news: false
+  notify_offers: false
+  notify_message: false
+  notify_quote: false
+  notify_apppointment: false
+  notify_photos: false
+  notify_bill: false
